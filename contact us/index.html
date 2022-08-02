@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html>
-    <title> Contact US</title>
+    <title>
+        Contact US
+    </title>
     <head>
         <style>
-
             .main-box {
-                background-color: black;
                 display: flex;
+                flex-direction: column;
+                background-color: black;
+                width: 900px;
+                height: 900px;
+                padding: 20px 20px 20px 20px;
             }
-
-            .left {
+            .top-box {
+                width: 900px;
+                height: 700px;
+                display: flex;
+                flex-direction: row;
+            }
+            .left-box {
                 background-color: blue;
-                height : 600px;
-                width : 260px;
+                height: 700px;
+                width: 300px;
             }
-
+            .left-box-top {
+                text-align: left;
+            }
             li {
                 list-style-type: none;
             }
@@ -24,163 +36,149 @@
                 color: yellow;
                 text-decoration: none;
             }
-
-            .right {
-                background-color: bisque;
-                height: 600px;
-                width: 640px;
+            .left-middle-box {
+                text-align: left;
+            }
+            li {
+                list-style-type: none;
             }
 
-            .intext {
-                text-decoration: dashed;
-                text-decoration-color: white;
+            a {
+
+                color: yellow;
+                text-decoration: none;
             }
-
-            p {
-                float: left;
-                margin-left: 10px;
+            .left-bottom-box {
+                text-align: center;
+                color: white;
             }
-
-            .information {
-                text-align: right;
-                margin-right: 10px;
-            }
-
-            .button {
-
-            }
-
-            .inside {
-
-                display: flex;
-                margin: 20px;
-            }
-
-            .inleft {
-
+            .right-box {
                 display: flex;
                 flex-direction: column;
-                width: 50%;
+                background-color: bisque;
+                height: 700px;
+                width: 600px;
             }
-
-            .inright {
-
+            .right-box-top {
+                text-align: center;
+                font-style: oblique;
+                font-size: 30px;
+            }
+            .right-box-bottom {
                 display: flex;
-                flex-direction: right;
-                width: 50%;
-                margin-top: 10px;
-                padding: 20px;
+                flex-direction: row;
             }
-
+            .right-box-left {
+                text-align: left;
+                width: 100px;
+                margin: 20px;
+            }
+            .right-box-right {
+                text-align: left;
+                margin: 60px;
+            }
+            .bottom-box {
+                color: white;
+                text-align: right;
+            }
         </style>
     </head>
-    <body class="main-box">
-        <div></div>
-          <div class="left">
-           <nav>
-            <li>
-                <ul class="link">
-                    <ul><a href="_blank">HOME</a></ul>
-                    <ul><a href="_blank">PRIVATE JOURNEY</a></ul>
-                    <ul><a href="_blank">FAMILY TRAVEL</a></ul>
-                    <ul><a href="_blank">SPORTS & ADVENTURE</a></ul>
-                    <ul><a href="_blank">AFRICA</a></ul>
-                    <ul><a href="_blank">ASIA & THE PACIFIC RIM</a></ul>
-                    <ul><a href="_blank">AUSTRALIA & NEWZEALAND</a></ul>
-                    <ul><a href="_blank">EGYPT,ISREAL & JORDAN</a></ul>
-                    <ul><a href="_blank">GREECE,MOROCCO & TURKEY</a></ul>
-                    <ul><a href="_blank">INDIA & BUTHAN</a></ul>
-                    <ul><a href="_blank">SOUTH AMERICA</a></ul>
-                    <ul><a href="_blank">UNIQELY EUROPE</a></ul>
-                    <ul><a href="_blank">WORLD CRUSING</a></ul>
-                    <ul><a href="_blank">ABOUT US</a></ul>
-                    <ul><a href="_blank">WHAT WE DO FOR YOU</a></ul>
-                    <ul><a href="_blank">TERMS & CONDITIONS</a></ul>
-                </ul>
-
-                <div>
-                    <li>
-                        <div>
-                         <ul class="intext">
-                         <ul><a href="_blank">Contact US</a></ul>
-                         </ul>
-                        </div>
-
-                        <div>
-                        <ul><a href="_blank">PRIVATE Brocher Request</a></ul>
-                        <ul><a href="_blank">Specials</a></ul>
-                        <ul><a href="_blank">Above & Beyond</a></ul>
-                        <ul><a href="_blank">Press & Praise</a></ul>
-                        </div>
-                    </li>
+    <body>
+        <div class="main-box">
+            <div class="top-box">
+                <div class="left-box">
+                    <div class="left-top-box">
+                        <nav>
+                            <li>
+                                <ul class="link">
+                                    <ul><a href="_blank">HOME</a></ul>
+                                    <ul><a href="_blank">PRIVATE JOURNEY</a></ul>
+                                    <ul><a href="_blank">FAMILY TRAVEL</a></ul>
+                                    <ul><a href="_blank">SPORTS & ADVENTURE</a></ul>
+                                    <ul><a href="_blank">AFRICA</a></ul>
+                                    <ul><a href="_blank">ASIA & THE PACIFIC RIM</a></ul>
+                                    <ul><a href="_blank">AUSTRALIA & NEWZEALAND</a></ul>
+                                    <ul><a href="_blank">EGYPT,ISREAL & JORDAN</a></ul>
+                                    <ul><a href="_blank">GREECE,MOROCCO & TURKEY</a></ul>
+                                    <ul><a href="_blank">INDIA & BUTHAN</a></ul>
+                                    <ul><a href="_blank">SOUTH AMERICA</a></ul>
+                                    <ul><a href="_blank">UNIQELY EUROPE</a></ul>
+                                    <ul><a href="_blank">WORLD CRUSING</a></ul>
+                                    <ul><a href="_blank">ABOUT US</a></ul>
+                                    <ul><a href="_blank">WHAT WE DO FOR YOU</a></ul>
+                                    <ul><a href="_blank">TERMS & CONDITIONS</a></ul>
+                                </ul>
+                        </nav>           
+                    </div>
+                    <div class="left-middle-box">
+                        <nav>
+                            <li>
+                                <ul><a href="_blank"><u><font size="+1">Contact US</font></u></a></ul>
+                                <ul><a href="_blank">PRIVATE Brocher Request</a></ul>
+                                <ul><a href="_blank">Specials</a></ul>
+                                <ul><a href="_blank">Above & Beyond</a></ul>
+                                <ul><a href="_blank">Press & Praise</a></ul>
+                            </li>
+                        </nav>
+                    </div>
+                    <div class="left-bottom-box">
+                        <p>800.659.4599</p>
+                    </div>
                 </div>
-            </li>
-        </nav>
-    </div>
-
-    <div class="right">
-        <h1 style="text-align: center";>
-            <font color="green">Contact</font> <font color="white">Us</font>
-        </h1>
-
-        <h2 style="text-align:left"></h2>
-
-     </br>
-
-     <div class="inside">
-      <div class="inleft">
-        <h3><strong>Destination & Adventures International</strong></h3>
-        <p> 
-        8820 wilshire Boulevard suite 240 Beverly hills,CA 90211 USA
-     </p>
-
-     </br>
-
-     <p> 
-        Phone:800-659-4599 310-854-6060
-     </p>
-
-     </br>
-
-     <p> Fax 310-854-6050</p>
-
-     </br>
-
-     <p>
-        Email: <font color="blue">info@daitravel.com</font>
-     </p>
-     </div>
-
-     <div class="inright">
-      <div class="information">
-        <label for="Yname">Your name(required)</label>
-        <input name="Your Name" type="text"/>
-        </br>
-        <label for="email">Your Email(required)</label>
-        <input name="Your Email(required)" type="email"/>
-        </br>
-        </br>
-        <label for="Suject">Subject</label>
-        <input name="Subject" type="text"/>
-        </br>
-        <label for="ymessage">Your Message</label>
-        <textarea style="height: 170px;"></textarea>
-        </br>
-        <button class="button">Send</button>
-     </div>
-     </div>
-     </div>
-     </div>
-    </div>
-
-    <footer> 
-        <p style="color: white;">
-            2011 destinations & Adventures International. All rights reserved. Terms & conditions.
-        </p>
-
-        <p style="color: white">
-            8820 Wilshire Boulevard, Suit 240, Beverly Hills, CA 90211 USA Email:info@daitravel.com Phone: 800-559-4599/310-854-6060 fax: 310-854-6050
-        </p>
-    </footer>
+                <div class="right-box">
+                    <div class="right-box-top">
+                        <h1>
+                            <font color="green">Contact</font> <font color="white">Us</font>
+                        </h1>
+                    </div>
+                     <div class="right-box-bottom">
+                        <div class="right-box-left">
+                            <h3><strong>Destination & Adventures International</strong>
+                            </h3>
+                            <p> 
+                            8820 wilshire Boulevard suite 240 Beverly hills,CA 90211 USA
+                            </p>
+                    
+                         </br>
+                    
+                         <p> 
+                            Phone:800-659-4599 310-854-6060
+                         </p>
+                    
+                         </br>
+                    
+                         <p> Fax 310-854-6050</p>
+                    
+                         </br>
+                    
+                         <p>
+                            Email: <font color="blue">info@daitravel.com</font>
+                         </p>
+                        </div>
+                     <div class="right-box-right">
+                        <label for="Yname">Your name(required)</label><br>
+                        <input name="Your Name" type="text"/>
+                        </br>
+                        <label for="email">Your Email(required)</label><br>
+                        <input name="Your Email(required)" type="email"/>
+                        </br>
+                        <label for="Suject">Subject</label><br>
+                        <input name="Subject" type="text"/>
+                        </br>
+                        <label for="ymessage">Your Message</label><br>
+                        <textarea style="height: 170px;"></textarea>
+                        </br>
+                        <button class="button">Send</button>
+                     </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-box">
+                <p style="color: white">
+                    2011 destinations & Adventures International. All rights reserved. Terms & conditions.<br>
+                    8820 Wilshire Boulevard, Suit 240, Beverly Hills, CA 90211 USA Email:info@daitravel.com Phone: 800-559-4599/310-854-6060 fax: 310-854-6050
+                </p>
+            </div>
+        </div>
     </body>
 </html>
