@@ -31,7 +31,7 @@ const mapped = n.map(function(el,idx) {
 console.log(mapped) // multiply if greater then 5
 */
 
-//const n = [5]
+//const n = [1,2,3,4,5]
 //const res = n % 2
 //const mapped = n.map(function(el) {
     //if (res === 0) {
