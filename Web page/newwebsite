@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 18px;
+            color: #666;
+        }
+
+        .button-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px 0;
+        }
+
+        .button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .product img {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+        }
+
+        p {
+            color: #444;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Website Title</h1>
+        <h2>A SHORT DESCRIPTION OF WHAT THE WEBSITE IS ABOUT</h2>
+        
+        <div class="button-group">
+            <button class="button">Home</button>
+            <button class="button">Products</button>
+            <button class="button">About Us</button>
+            <button class="button">Contact Us</button>
+            <button class="button">Links</button>
+            <button class="button">Page 1</button>
+            <button class="button">Page 2</button>
+            <button class="button">Page 3</button>
+            <button class="button">Page 4</button>
+        </div>
+        
+        <div class="box">
+            <h3>Products</h3>
+            <div class="product">
+                <img src="orange.png" alt="Product Image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida at ex sit amet blandit. 
+                    Phasellus vitae rhoncus arcu. Phasellus vestibulum diam enim, sed mattis odio pharetra sed.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
