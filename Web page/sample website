@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Collection</title>
+    <style>
+        body { font-family: sans-serif; }
+        input[type=text]::placeholder { color: black; opacity: 0.2; }
+        input[type=tel]::placeholder { color: black; opacity: 0.2; }
+        input[type=email]::placeholder { color: black; opacity: 0.2; }
+        input.empty::placeholder { color: black; opacity: 0.5; }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const inputs = document.querySelectorAll('input');
+            inputs.forEach(input => {
+                input.classList.add('empty');
+                input.addEventListener('focus', function() {
+                    this.classList.remove('empty');
+                });
+                input.addEventListener('focusout', function() {
+                    if (this.value === '') {
+                        this.classList.add('empty');
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body style="background-color: #F0F8FF;">
+    <h1 style="color: #5EB493;">Please fill out the following form:</h1>
+    <form action="/" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" pattern="^[A-Za-z]+( [A-Za-z]+)*$" required placeholder="Example: Krishna Manohar"><br>
+        <label for="phone">Mobile:</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="Example: 9848022338"><br>
+        <label for="email"> Only GMail:</label><br>
+        <input type="email" id="email" name="email" required pattern="^[a-zA-Z0-9._%+-]+@gmail.com" placeholder="Example: chinni@gmail.com"><br>
+        <button type="submit">Save</button>
+    </form>
+</body>
+</html>
